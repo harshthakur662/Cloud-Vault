@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CloudVault - Secure Cloud Storage for your files">
+    <title>CloudVault - Secure Cloud Storage</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            letter-spacing: 2px;
+            color: #e67e22;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 20px 0 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+            transform: scale(1.1);
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?cloud,technology') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .hero h2 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .cta-btn {
+            padding: 15px 30px;
+            background-color: #e67e22;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #d35400;
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 1rem;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .cta-btn {
+                padding: 12px 25px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin: 0;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+
+        /* Animation for Hero */
+        .hero .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>CloudVault</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero fade-in">
+        <h2>Secure Your Files with CloudVault</h2>
+        <p>Store, manage, and share your files with the best security in the cloud.</p>
+        <a href="pricing.html" class="cta-btn">Get Started</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CloudVault. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add fade-in animation on page load for hero section
+        document.addEventListener('DOMContentLoaded', function() {
+            const hero = document.querySelector('.hero');
+            hero.classList.add('fade-in');
+        });
+
+        // Smooth scroll for navigation
+        const links = document.querySelectorAll('nav ul li a');
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                window.scrollTo({
+                    top: targetElement.offsetTop - 50,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
