@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudVault - Features</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styling for header, navigation, and footer */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header .logo h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Styling for the features section */
+        .features {
+            padding: 40px;
+            text-align: center;
+        }
+        .features h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 40px;
+        }
+        .feature {
+            display: inline-block;
+            width: 28%;
+            margin: 10px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature:hover {
+            transform: scale(1.05);
+        }
+        .feature img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .feature h3 {
+            font-size: 24px;
+            color: #333;
+            margin-top: 20px;
+        }
+        .feature p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .feature {
+                width: 48%;
+            }
+        }
+        @media (max-width: 480px) {
+            .feature {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>CloudVault</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="features">
+        <h2>Key Features of CloudVault</h2>
+        <div class="feature">
+            <img src="e2e.jpg" alt="End-to-End Encryption">
+            <h3>End-to-End Encryption</h3>
+            <p>Your files are always encrypted, ensuring complete privacy and security.</p>
+        </div>
+        <div class="feature">
+            <img src="fileshare.jpg" alt="Easy File Sharing">
+            <h3>Easy File Sharing</h3>
+            <p>Share files securely with friends, family, or colleagues in just a few clicks.</p>
+        </div>
+        <div class="feature">
+            <img src="backup.jpg" alt="Automatic Backup">
+            <h3>Automatic Backup</h3>
+            <p>Automatically back up your files and never worry about data loss again.</p>
+        </div>
+        <div class="feature">
+            <img src="easyaccess.jpg" alt="Access Anywhere">
+            <h3>Access Anywhere</h3>
+            <p>Access your files from any device, anywhere, at any time.</p>
+        </div>
+        <div class="feature">
+            <img src="security.jpg" alt="Top-Level Security">
+            <h3>Top-Level Security</h3>
+            <p>We use the best security protocols to protect your data from unauthorized access.</p>
+        </div>
+        <div class="feature">
+            <img src="synchronization.jpg" alt="Cloud Synchronization">
+            <h3>Cloud Synchronization</h3>
+            <p>Seamlessly sync your files across multiple devices for easy access and management.</p>
+        </div>
+        <div class="feature">
+            <img src="reliable.png" alt="Reliable Storage">
+            <h3>Reliable Storage</h3>
+            <p>Store large amounts of data with peace of mind, knowing your files are safe and accessible.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 CloudVault. All rights reserved.</p>
+    </footer>
+</body>
+</html>
